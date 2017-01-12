@@ -21,7 +21,7 @@ describe('Recipes', function() {
 // GET TEST
 
   it('should list recipes on GET', function() {
-  	return chai.request(server)
+  	return chai.request(app)
   	.get('/recipes')
   	.then(function(res) {
   		res.should.have.status(200);
